@@ -20,7 +20,7 @@ const Blogs = () => {
                         <article key={id}>
                             <h4>{title}</h4>
                             <p>{trancateString(body, 50)}</p>
-                            <Link to={title}>Read More</Link>
+                            <Link to={title} state={{body}}>Read More</Link>
                         </article>
                     );
                 })}
