@@ -23,5 +23,10 @@ export const Data=[
         id:5,
         title:"JavaScript",
         body:"JavaScript is the programming language of the Web."
+    },
+    {
+        id:6,
+        title:"JavaScript",
+        body:"JavaScript is the programming language of the Web another."
     }
 ]
