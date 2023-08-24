@@ -9,6 +9,7 @@ import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 import Error from './pages/Error'
 import Blog from './pages/Blog'
+import User from './pages/User'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
         <Route path="/blogs" element={<Blogs/>}/>
         <Route path="/blogs/:title" element={<Blog/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/user" element={<User/>}/>
         <Route path="*" element={<Error/>}/>
       </Routes>
     </BrowserRouter>
