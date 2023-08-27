@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Data } from "../data";
 import { Link } from "react-router-dom";
+import Header from "../components/Header";
+
 const Blogs = () => {
     const [blogData, setBlogData] = useState(Data);
     const trancateString = (str, num) => {
@@ -12,6 +14,7 @@ const Blogs = () => {
     }
     return (
         <div>
+            <Header title="Blogs"/>
             <h3>Blogs</h3>
             <section>
                 {blogData.map((blog) => {
